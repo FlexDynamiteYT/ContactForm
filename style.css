@@ -21,7 +21,8 @@ body {
     background-repeat: no-repeat;
 }
 
-/* form */
+@media screen and (min-width: 391px){
+    /* form */
 
 form {
     border: 2px gray;
@@ -113,19 +114,110 @@ h1 {
     border-radius: 20px 0 20px 0;
     
 }
+}
 
-/* .info *{
-    border-radius: 4px;
-}
-.info{
-    display: flex;
-    margin-right: 50px;
-    background: primary;
-    padding: 5px;
+@media screen and (max-width: 988px){
+    form {
+        width: 90vw;
+        margin: 50px auto;
+    }
+    .formContainer{
+        padding: 40px;
+    }
+    h1 {
+        font-size: 25px;
+        text-align: center;
+        padding: 20px;
+    }
+    
+    /* Inside form styling */
+    
+    .info {
+        /* background: gray; */
+        display: flex;
+        
+    }
+    
+    .info input {
+        border: none;
+        width: 100%;
+        border-bottom: solid 1px var(--primary);
+        font-size: 16px;
+        margin-bottom: 20px;
+        outline: none;
+        font-family: 'poppins', sans-serif;
+    }
+    
+    .fname {
+        margin-right: 20px;
+    }
+    .email_pay{
+        display: flex;
+        margin-bottom: 16px;
+        align-items: center;
+        
+    }
+    .email, .pay_opt p{
+        border: none;
+        border-bottom: solid 1px var(--primary);
+        font-size: 16px;
+    }
 
+
+    .email{
+        margin-right: 0px;
+        width: 100%;
+        margin-bottom: 90px;
+      
+    }
+    .pay_opt{
+        width:100%;
+        margin-left: 10px;
+        margin-top: 50px;
+        cursor: pointer;
+    
+    }
+
+    input[type='radio']{
+        display: flex;
+        font-size: 10px;
+        margin-top: 10px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    .pay_opt p{
+        margin-top: 0px;
+        font-size: 14px;
+
+    }
+    .textbox, .submit{
+        display:block;
+        font-family: 'poppins', sans-serif;
+    }
+    
+    .textbox{
+        width: 100%;
+        border: none;
+        background: #79797927;
+    }
+    .submit{
+        border: none;
+        margin: 20px auto;
+        padding: 10px;
+        width: 80px;
+        border-radius: 0 20px 0 20px;
+        background-color: var(--primary);
+        color: white;
+        transition: .2s all;
+    }
+    .submit:hover{
+        background-color: var(--black);
+        cursor: pointer;
+        box-shadow: -2px 3px 15px rgba(255, 187, 0, .7);
+        border-radius: 20px 0 20px 0;
+        
+    }
 }
-.textbox{
-    font-family: 'Poppins', sans-serif;
-    height: 50px;
-}
- */
